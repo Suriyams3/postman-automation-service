@@ -10,4 +10,4 @@ inputs:
 
 run:
   path: sh
-  args: [ "newman-repo/newman/run-newman.sh" ]
+  args: [ "newman-repo/src/run-newman.sh" ]

@@ -11,5 +11,5 @@ jobs:
   plan:
   - get: newman-repo
   - task: test-api
-    file: newman-repo/newman/newman-task.yml
-    params: { "ENVIRONMENT_URL": "https://raw.githubusercontent.com/mkreibe/ConcourseCI-Newman/master/newman/test-environment.json", "COLLECTION_URL": "https://raw.githubusercontent.com/mkreibe/ConcourseCI-Newman/master/newman/test-collection.json" }
+    file: newman-repo/src/newman-task.yml
+    params: { "ENVIRONMENT_URL": "https://github.com/Suriyams3/postman-automation-service/blob/main/src/BookDevEnvironment.json", "COLLECTION_URL": "https://github.com/Suriyams3/postman-automation-service/blob/main/src/bookApiCollectionwoAuth.json" }
