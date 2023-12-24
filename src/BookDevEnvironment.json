@@ -1,0 +1,21 @@
+{
+	"id": "87dacc49-4904-493b-aed8-e73483c322e0",
+	"name": "BookDev",
+	"values": [
+		{
+			"key": "customerName",
+			"value": "\"default13\"",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "customerEmail",
+			"value": "\"default13@example.com\"",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2023-12-24T09:45:10.526Z",
+	"_postman_exported_using": "Postman/10.21.9"
+}

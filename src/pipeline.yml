@@ -1,0 +1,15 @@
+---
+resources:
+- name: newman-repo
+  type: git
+  source:
+    uri: https://github.com/Suriyams3/postman-automation-service.git
+  
+jobs:
+- name: test-rest-api
+  public: true
+  plan:
+  - get: newman-repo
+  - task: test-api
+    file: newman-repo/newman/newman-task.yml
+    params: { "ENVIRONMENT_URL": "https://raw.githubusercontent.com/mkreibe/ConcourseCI-Newman/master/newman/test-environment.json", "COLLECTION_URL": "https://raw.githubusercontent.com/mkreibe/ConcourseCI-Newman/master/newman/test-collection.json" }
